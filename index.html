@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern Glass Stopwatch & Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Switch -->
+    <div class="switcher">
+        <button id="showStopwatch" class="active"><i class="bi bi-stopwatch"></i> Stopwatch</button>
+        <button id="showTimer"><i class="bi bi-hourglass-split"></i> Timer</button>
+    </div>
+
+    <!-- Stopwatch Panel -->
+    <div id="stopwatchPanel" class="panel visible">
+        <h4 class="mb-3">⏱ Stopwatch</h4>
+        <div id="swDisplay" class="time-display">00:00.00</div>
+        <div class="controls mb-3">
+            <button id="swStart" class="btn btn-success"><i class="bi bi-play-fill"></i></button>
+            <button id="swPause" class="btn btn-warning d-none"><i class="bi bi-pause-fill"></i></button>
+            <button id="swLap" class="btn btn-primary"><i class="bi bi-flag"></i></button>
+            <button id="swReset" class="btn btn-danger"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+        <div id="lapsList" class="list-group small text-start"></div>
+    </div>
+
+    <!-- Timer Panel -->
+    <div id="timerPanel" class="panel hidden">
+        <h4 class="mb-3">⏳ Timer</h4>
+        <div id="timerDisplay" class="time-display">00:01:00</div>
+        <div class="d-flex justify-content-center gap-2 mb-3 flex-wrap">
+            <input id="minutes" type="number" min="0" value="1" class="form-control form-control-sm w-auto">
+            <input id="seconds" type="number" min="0" max="59" value="0" class="form-control form-control-sm w-auto">
+            <button id="setTime" class="btn btn-light btn-sm">Set</button>
+        </div>
+        <div class="controls mb-2">
+            <button id="timerStart" class="btn btn-success"><i class="bi bi-play-fill"></i></button>
+            <button id="timerPause" class="btn btn-warning d-none"><i class="bi bi-pause-fill"></i></button>
+            <button id="timerReset" class="btn btn-danger"><i class="bi bi-arrow-clockwise"></i></button>
+        </div>
+    </div>
+
+
+    <script src="main.js"> </script>
+</body>
+
+</html>
