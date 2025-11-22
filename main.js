@@ -40,8 +40,7 @@ swReset.onclick = () => {
     swPause.classList.add('d-none');
     swStart.classList.remove('d-none');
     document.getElementById("lapsList").innerHTML = "";
-
-
+    
 }
 
 swStart.onclick = () => {

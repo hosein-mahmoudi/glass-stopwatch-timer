@@ -25,6 +25,7 @@
         <h4 class="mb-3">⏱ Stopwatch</h4>
         <div id="swDisplay" class="time-display">00:00.00</div>
         <div class="controls mb-3">
+            
             <button id="swStart" class="btn btn-success"><i class="bi bi-play-fill"></i></button>
             <button id="swPause" class="btn btn-warning d-none"><i class="bi bi-pause-fill"></i></button>
             <button id="swLap" class="btn btn-primary"><i class="bi bi-flag"></i></button>
@@ -38,9 +39,9 @@
         <h4 class="mb-3">⏳ Timer</h4>
         <div id="timerDisplay" class="time-display">00:01:00</div>
         <div class="d-flex justify-content-center gap-2 mb-3 flex-wrap">
-            <input id="minutes" type="number" min="0" value="1" class="form-control form-control-sm w-auto">
-            <input id="seconds" type="number" min="0" max="59" value="0" class="form-control form-control-sm w-auto">
-            <button id="setTime" class="btn btn-light btn-sm">Set</button>
+            <input id="minutes"  type="text" min="0" value="1" class="form-control form-control-sm w-15">
+            <input id="seconds" type="text" min="0" max="59" value="0" class="form-control form-control-sm w-15">
+            <button id="setTime" class="btn btn-primary btn-sm w-20 rounded-3">Set</button>
         </div>
         <div class="controls mb-2">
             <button id="timerStart" class="btn btn-success"><i class="bi bi-play-fill"></i></button>
